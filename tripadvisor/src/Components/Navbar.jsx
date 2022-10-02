@@ -1,11 +1,16 @@
-import { Box, Link, Image, Text  } from "@chakra-ui/react";
+import { Box, Link, Image, Text, Button  } from "@chakra-ui/react";
 import ModeEditOutlineOutlinedIcon from '@mui/icons-material/ModeEditOutlineOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined';
 import Signin from "./Signin";
+import { useState } from "react";
 
 
 function Navbar(){
+
+    
+    const [isAuth, setAuth]= useState(false);
+
     return <Box w="full" boxShadow='base' position="fixed" bg="white" zIndex={1}  p="3px 0px">
             <Box h="60px" w="85%" m="auto" display="flex" alignItems="center" justifyContent="space-between">
             <Link to="/">
@@ -25,7 +30,11 @@ function Navbar(){
                     <Text fontWeight="500" fontSize='md'>Alerts</Text>
                 </Link>
                 <Link display="flex">
-                    <Signin />
+                    {isAuth ? 
+                    <Button onClick={()=>{
+                        setAuth(!isAuth);
+                    }}>Sanghamitra</Button> : <Signin />
+                }
                 </Link>
             </Box>
         </Box>

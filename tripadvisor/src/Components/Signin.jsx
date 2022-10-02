@@ -4,11 +4,17 @@ import React from "react";
 
 function Signin(){
 
-    const { isOpen, onOpen, onClose } = useDisclosure()
+    const { isOpen, onOpen, onClose } = useDisclosure();
 
     const initialRef = React.useRef(null)
     const finalRef = React.useRef(null)
     const [scrollBehavior] = React.useState('inside')
+
+
+    function handleSubmit(){
+      alert("Successfully Logged in");
+      window.location.reload();
+    }
 
 
     return <>
@@ -49,7 +55,9 @@ function Signin(){
             <Text mt="10px" ml="5px" textDecoration="underline" color="black" fontWeight="400" fontSize="md">Forgot Password?</Text>
 
             <FormControl textAlign="center">
-                <Button fontWeight="700" bg="black" p="27px 25px" w="80%" m="auto" mt="20px" borderRadius="3xl" color="white" fontSize='md'>Sign in</Button>
+                <Button onClick={()=>{
+                  handleSubmit();
+                }} fontWeight="700" bg="black" p="27px 25px" w="80%" m="auto" mt="20px" borderRadius="3xl" color="white" fontSize='md'>Sign in</Button>
             </FormControl>
 
             <Box w="97%" m="auto" mt="25px" display="flex" gap="8px" alignItems="center">
