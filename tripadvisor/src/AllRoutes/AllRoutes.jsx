@@ -3,7 +3,7 @@ import Navbar from "../Components/Navbar"
 
 function AllRoutes(){
     return <Routes>
-        <Route to="" elements={<Navbar/>} ></Route>
+        <Route path="/" elements={<Navbar/>} ></Route>
         <Route></Route>
         <Route></Route>
         <Route></Route>

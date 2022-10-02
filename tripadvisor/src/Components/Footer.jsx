@@ -33,12 +33,12 @@ function Footer(){
                     <Text color="black" fontWeight="500" fontSize='sm'>Access our Content API</Text>
                     <Text fontSize='md'>Get The App</Text>
                     <Text color="black" fontWeight="500" fontSize='sm'>iPhone App</Text>
-                    <Text color="black" fontWeight="500" fontSize='sm'>Android App</Text>
+                    <Text _hover={{ textDecoration: 'none' }} color="black" fontWeight="500" fontSize='sm'>Android App</Text>
                 </Box>
             </Box>
             <Box mr="80px">
                 <Text fontSize='md'>Tripadvisor Sites</Text>
-                <Text fontSize='sm'>Book tours and attraction tickets on Viator</Text>
+                <Text fontSize='sm'>Book tours and attraction tickets on <b _hover={{ textDecoration: 'underline' }}>Viator</b></Text>
             </Box>
         </Box>
         <Box w="85%" m="auto" display="flex" mt="20px">
