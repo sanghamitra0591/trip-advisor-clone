@@ -1,5 +1,6 @@
 import './App.css';
 import Footer from './Components/Footer';
+import Homeeight from './Components/Homeeight';
 import Homefive from './Components/Homefive';
 import Homefour from './Components/Homefour';
 import HomeNav from './Components/Homenav';
@@ -22,6 +23,7 @@ function App() {
       <Homefive />
       <Homesix />
       <Homeseven />
+      <Homeeight />
       <Footer />
     </div>
   );
