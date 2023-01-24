@@ -22,7 +22,7 @@ This website clone is made using React, Chakra UI, JavaScript etc.
 
 ## Tech Stacks used:- 
 
-* React, CSS, JAVASCRIPT, Chakra UI
+* React, CSS, Javascript, Chakra UI
 
 * Deployment - Vercel.
 
