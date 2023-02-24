@@ -6,24 +6,28 @@ function Hometwo(){
 
     const data= [
         {
+            id: 1,
             img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/3d/6b/0d/caption.jpg?w=300&h=300&s=1",
             title: "Kolkata-Sounds and Sights-Private Full Day City Tour",
             review: "32",
             price: "from ₹4,800 per adult"
         },
         {
+            id: 2,
             img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/c7/d9/ea/caption.jpg?w=300&h=300&s=1",
             title: "Private Half-Day Kolkata Tour",
             review: "23",
             price: "from ₹2,595 per adult"
         },
         {
+            id: 3,
             img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/8c/36/6b/caption.jpg?w=300&h=300&s=1",
             title: "One Day Guided Kolkata Local Sightseeing Trip by Cab",
             review: "5",
             price: "from ₹6,000 per adult"
         },
         {
+            id: 4,
             img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/64/42/4f/caption.jpg?w=300&h=300&s=1",
             title: "Day trip from Kolkata to Bishnupur for Terracotta Temples and Silk",
             review: "8",
@@ -36,7 +40,7 @@ function Hometwo(){
         <Text fontSize='md'>Book these experiences for a close-up look at Kolkata (Calcutta).</Text>
         <Box display="grid" justifyContent="space-between" gridTemplateColumns="repeat(4, 1fr)" gap="15px" mt="15px">
             {data && data.map((el)=>{
-                return <Box position="relative">
+                return <Box position="relative" key={el.id}>
                     <Image src={el.img} alt="" />
                     <Text fontWeight="600" fontSize='lg'>{el.title}</Text>
                     <Box w="90px" display="flex" gap="2px" alignItems="center">

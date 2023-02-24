@@ -7,7 +7,7 @@ import LocalDiningOutlinedIcon from '@mui/icons-material/LocalDiningOutlined';
 import ForumOutlinedIcon from '@mui/icons-material/ForumOutlined';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 
-function HomeNav(){
+function SubNav(){
     return <Box h="100px" w="85%" m="auto" pt="100px" mb="80px" display="grid" gridTemplateColumns="repeat(6, 1fr)" alignItems="center" gap="15px">
         <Box h="50px" _hover={{bg:"black", color:"white"}} borderRadius='xl' p="10px 16px" fontWeight="500" fontSize='md' border="1.5px solid black" justifyContent="space-between" display="flex" alignItems="center">
             <Link fontSize='md'>Hotels</Link>
@@ -51,4 +51,4 @@ function HomeNav(){
         </Box>
     </Box>
 }
-export default HomeNav;
+export default SubNav;

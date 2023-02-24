@@ -1,12 +1,9 @@
-import {Routes, Route} from "@chakra-ui/react";
-import Navbar from "../Components/Navbar"
+import {Routes, Route} from "react-router-dom";
+import Home from "../Pages/Home";
 
 function AllRoutes(){
     return <Routes>
-        <Route path="/" elements={<Navbar/>} ></Route>
-        <Route></Route>
-        <Route></Route>
-        <Route></Route>
+        <Route path="/" element={<Home />} ></Route>
     </Routes>
 }
 
